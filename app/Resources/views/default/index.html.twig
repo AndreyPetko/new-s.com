@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<table>
+<h1>Игры</h1>
+    {% for game in games %}
+    <tr>
+        <td>{{game.day}}</td>
+        <td>{{game.home}}</td>
+        <td>{{game.away}}</td>
+        <td>{{game.stadium_id}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
